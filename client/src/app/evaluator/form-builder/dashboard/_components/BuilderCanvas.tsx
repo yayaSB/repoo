@@ -6,7 +6,7 @@ import {
   useDndMonitor,
   useDroppable,
 } from "@dnd-kit/core";
-import { useBuilder } from "context/builder-provider";
+import { useBuilder } from "@/context/builder-provider";
 import { FormBlockInstance, FormBlockType } from "@/@types/form-block.type";
 import { FormBlocks } from "@/lib/form-utils/form-blocks";
 import { allBlockLayouts } from "@/constants/form-builder";

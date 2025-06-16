@@ -18,7 +18,7 @@ import { cn } from "@/lib/utils";
 import { FileTextIcon, Home } from "lucide-react";
 import FormBlockBox from "./_common/FormBlockBox";
 import FormSettings from "./_common/FormSettings";
-import { useBuilder } from "context/builder-provider";
+import { useBuilder } from "@/context/builder-provider";
 
 const BuilderSidebar = ({
   rest,

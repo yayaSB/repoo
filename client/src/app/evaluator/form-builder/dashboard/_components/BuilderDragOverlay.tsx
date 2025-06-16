@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Active, DragOverlay, useDndMonitor } from "@dnd-kit/core";
 import { FormBlockType } from "@/@types/form-block.type";
 import BlockBtnDragOverlay from "@/components/BlockBtnDragOverlay";
-import { useBuilder } from "context/builder-provider";
+import { useBuilder } from "@/context/builder-provider";
 import { FormBlocks } from "@/lib/form-utils/form-blocks";
 
 const BuilderDragOverlay = () => {

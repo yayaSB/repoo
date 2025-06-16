@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Loader } from "lucide-react";
 import { DndContext, MouseSensor, useSensor, useSensors } from "@dnd-kit/core";
 import { SidebarProvider } from "@/components/ui/sidebar";
-import { useBuilder } from "context/builder-provider";
+import { useBuilder } from "@/context/builder-provider";
 import Builder from "./Builder";
 import BuilderDragOverlay from "./BuilderDragOverlay";
 

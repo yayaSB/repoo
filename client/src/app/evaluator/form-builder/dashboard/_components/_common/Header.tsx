@@ -34,17 +34,19 @@ const Header = () => {
   const NAV_MENUS = [
     {
       name: "Dashboard",
-      pathname: "/dashboard",
+      pathname: "/evaluator/form-builder/dashboard",
       isDisabled: false,
     },
     {
       name: "Builder",
-      pathname: formId ? `/dashboard/form/builder/${formId}` : "#",
+      pathname: formId
+        ? `/evaluator/form-builder/dashboard/form/builder/${formId}`
+        : "#",
       isDisabled: !formId,
     },
     {
       name: "Responds",
-      pathname: `/dashboard/form/responds/${formId}`,
+      pathname: `/evaluator/form-builder/dashboard/form/responds/${formId}`,
       isDisabled: true,
     },
     {
@@ -58,7 +60,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 flex h-16 items-center gap-4 !bg-[#43217c] px-4 md:px-6">
       <nav className="gap-6 w-full h-full text-lg font-medium flex justify-between flex-row">
         <div className="flex flex-1 items-center mr-5 pr-8 border-r border-gray-600">
-          <Logo url="/dashboard" />
+          <Logo url="/evaluator/form-builder/dashboard" />
           <span className="sr-only">Formy</span>
         </div>
         <ul className="hidden md:flex flex-row">
@@ -70,7 +72,7 @@ const Header = () => {
                   `text-white/90 text-[15.5px] font-normal z-[999] flex items-center px-3 justify-center h-full transition-colors hover:text-opacity-90`,
                   {
                     "opacity-80 !pointer-events-none": item.isDisabled,
-                  }
+                  },
                 )}
               >
                 {item.name}

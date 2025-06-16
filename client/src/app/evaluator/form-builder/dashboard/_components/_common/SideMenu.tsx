@@ -17,12 +17,12 @@ const SideMenu = () => {
   const navMenus: NavType[] = [
     {
       title: "Builder",
-      url: `/dashboard/form/builder/${formId}`,
+      url: `/evaluator/form-builder/dashboard/form/builder/${formId}`,
       icon: Blocks,
     },
     {
       title: "Reponds",
-      url: `/dashboard/form/responds/${formId}`,
+      url: `/evaluator/form-builder/dashboard/form/responds/${formId}`,
       icon: MessageSquare,
     },
   ];
@@ -45,7 +45,7 @@ const SideMenu = () => {
                         `,
                 {
                   "bg-white text-black": item.url === pathname,
-                }
+                },
               )}
               onClick={() => {
                 router.push(item.url);

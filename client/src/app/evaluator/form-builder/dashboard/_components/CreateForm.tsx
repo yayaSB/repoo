@@ -67,8 +67,10 @@ const CreateForm = () => {
         setIsOpen(false); // Fermer la popup d'abord
         // Attendre un petit délai avant de router (facultatif mais utile)
         setTimeout(() => {
-         router.push(`/evaluator/form-builder/form/builder/${formId}`);
-        }, 100); // tu peux augmenter à 300 si besoin
+          router.push(
+            `/evaluator/form-builder/dashboard/form/builder/${formId}`,
+          );
+        }, 100); // Increase delay if needed
       } else {
         throw new Error(response?.message || "Form creation failed");
       }

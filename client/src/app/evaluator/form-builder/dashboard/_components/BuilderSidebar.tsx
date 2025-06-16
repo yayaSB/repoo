@@ -43,7 +43,9 @@ const BuilderSidebar = ({
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem className="hidden md:block">
-                  <BreadcrumbLink href="/dashboard">Home</BreadcrumbLink>
+                  <BreadcrumbLink href="/evaluator/form-builder/dashboard">
+                    Home
+                  </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="hidden md:block" />
                 <BreadcrumbItem>
@@ -77,7 +79,7 @@ const BuilderSidebar = ({
                               `,
                 {
                   "bg-white": tab === "blocks",
-                }
+                },
               )}
               onClick={() => setTab("blocks")}
             >
@@ -92,7 +94,7 @@ const BuilderSidebar = ({
                               `,
                 {
                   "bg-white": tab === "settings",
-                }
+                },
               )}
               onClick={() => setTab("settings")}
             >

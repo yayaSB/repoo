@@ -1,3 +1,5 @@
+"use server";
+
 import fs from "fs/promises";
 import path from "path";
 import { FormType, FormSettings, FormResponse, FormStats } from "@/@types/form.type";

@@ -1,0 +1,32 @@
+"use client";
+
+import Header from "@/components/header";
+import AssessmentIntro from "./assessment-intro";
+import InstructionsSection from "./instructions-section";
+import { useParams } from "next/navigation";
+import { assessmentsData } from "@/constants/data-assessment";
+
+export default function InstructionView() {
+  const { id } = useParams();
+  const assessment = assessmentsData.find((a) => a.id === id);
+
+  if (!assessment)
+    return <div className="p-10 text-red-500">Évaluation introuvable</div>;
+
+  return (
+    <div className="flex flex-col min-h-screen h-screen overflow-y-auto">
+         <Header
+            position="fixed"
+            background="transparent"
+            withMenu={false}
+            withLinks={false}
+            withLanguage={true}
+            showLogoLink={false}
+          />
+      <main className="flex-1 flex flex-col md:flex-row">
+        <AssessmentIntro assessment={assessment} />
+        <InstructionsSection />
+      </main>
+    </div>
+  );
+}

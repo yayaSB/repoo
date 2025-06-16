@@ -1,0 +1,48 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("MONGODB_URI")
+}
+
+model Form {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  formId      String   @unique @default(uuid())
+  userId      String
+  name        String
+  description String   @default("")
+  jsonBlocks  String   @default("[]")
+  views       Int      @default(0)
+  responses   Int      @default(0)
+  published   Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @default(now()) @updatedAt
+  creatorName String
+
+  settingsId String
+  settings   FormSettings @relation("FormToSettings", fields: [settingsId], references: [id]) // 👈 nom ajouté ici
+
+  formResponses FormResponses[]
+}
+
+model FormSettings {
+  id              String   @id @default(auto()) @map("_id") @db.ObjectId
+  primaryColor    String
+  backgroundColor String
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @default(now()) @updatedAt
+
+  forms Form[] @relation("FormToSettings") // 👈 identique ici
+}
+
+model FormResponses {
+  id          String @id @default(auto()) @map("_id") @db.ObjectId
+  jsonReponse String
+
+  formId    String
+  form      Form     @relation(fields: [formId], references: [id])
+  createdAt DateTime @default(now())
+}

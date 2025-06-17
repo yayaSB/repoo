@@ -7,7 +7,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { Textarea } from "@/components/ui/textarea";
-import { useBuilder } from "context/builder-provider";
+import { useBuilder } from "@/context/builder-provider";
 import { toast } from "@/hooks/use-toast";
 import { AIChatSession } from "@/lib/form-utils/google-ai";
 import { generateUniqueId } from "@/lib/form-utils/helper";

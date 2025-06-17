@@ -12,7 +12,7 @@ import ChildPropertiesComponentWrapper from "../../../ChildPropertiesComponentWr
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { allBlockLayouts } from "@/constants/form-builder";
-import { useBuilder } from "context/builder-provider";
+import { useBuilder } from "@/context/builder-provider";
 import { FormBlocks } from "@/lib/form-utils/form-blocks";
 import { generateUniqueId } from "@/lib/form-utils/helper";
 import { cn } from "@/lib/utils";

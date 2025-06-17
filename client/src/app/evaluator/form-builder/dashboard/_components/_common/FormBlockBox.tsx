@@ -1,8 +1,8 @@
 "use client";
-import BlockBtnElement from "@/components/form-builder/BlockBtnElement";
+import BlockBtnElement from "@/components/BlockBtnElement";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import { useBuilder } from "context/builder-provider";
+import { useBuilder } from "@/context/builder-provider";
 import { FormBlocks } from "@/lib/form-utils/form-blocks";
 import React, { useState } from "react";
 import AIAssistanceBtn from "./AIAssistanceBtn";

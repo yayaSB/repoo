@@ -22,7 +22,7 @@ import { useBuilder } from "@/context/builder-provider";
 import { Input } from "@/components/ui/input";
 import { Switch } from "@/components/ui/switch";
 
-import { defaultPrimaryColor } from "@/constant";
+import { defaultPrimaryColor } from "@/constants/form-builder";
 import { Label } from "../ui/label";
 
 import "@smastrom/react-rating/style.css";

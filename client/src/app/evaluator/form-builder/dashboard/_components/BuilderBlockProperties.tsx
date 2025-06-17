@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useBuilder } from "context/builder-provider";
+import { useBuilder } from "@/context/builder-provider";
 import { MousePointerClickIcon } from "lucide-react";
 import { FormBlocks } from "@/lib/form-utils/form-blocks";
 import PreviewDialog from "./_common/PreviewDialog";

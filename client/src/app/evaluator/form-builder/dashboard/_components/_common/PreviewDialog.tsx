@@ -10,7 +10,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { defaultBackgroundColor } from "@/constants/form-builder";
-import { useBuilder } from "context/builder-provider";
+import { useBuilder } from "@/context/builder-provider";
 import { FormBlocks } from "@/lib/form-utils/form-blocks";
 
 const PreviewDialog = () => {

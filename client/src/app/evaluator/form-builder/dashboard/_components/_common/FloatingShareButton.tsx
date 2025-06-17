@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useBuilder } from "context/builder-provider";
+import { useBuilder } from "@/context/builder-provider";
 import { Button } from "@/components/ui/button";
 import { Copy } from "lucide-react";
 import { toast } from "@/hooks/use-toast";

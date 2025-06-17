@@ -1,5 +1,37 @@
 {
-  "forms": [],
-  "formSettings": [],
+  "forms": [
+    {
+      "id": "820df0a44cd144dc8eb3a3b3c",
+      "formId": "820df0a44cd144dc8eb3a3b3c",
+      "name": "IT",
+      "description": "security ",
+      "jsonBlocks": "[{\"id\":\"2a3be1b8707c4f7da35caef73\",\"blockType\":\"RowLayout\",\"attributes\":{},\"isLocked\":true,\"childblocks\":[{\"id\":\"d55b22ad88574213aac6360c4\",\"blockType\":\"Heading\",\"attributes\":{\"label\":\"IT\",\"level\":1,\"fontSize\":\"4x-large\",\"fontWeight\":\"normal\"}},{\"id\":\"27841d121ccc4e10b7cfd1ae9\",\"blockType\":\"Paragraph\",\"attributes\":{\"label\":\"Paragraph\",\"text\":\"security \",\"fontSize\":\"small\",\"fontWeight\":\"normal\"}}]}]",
+      "views": 0,
+      "responses": 0,
+      "published": false,
+      "createdAt": "2025-06-17T11:13:18.073Z",
+      "updatedAt": "2025-06-17T11:13:18.073Z",
+      "userId": "local-user",
+      "creatorName": "Local User",
+      "settingsId": "9b13d2b6717e4d319b4df57cd",
+      "settings": {
+        "id": "9b13d2b6717e4d319b4df57cd",
+        "primaryColor": "#673ab7",
+        "backgroundColor": "#f0ebf8",
+        "createdAt": "2025-06-17T11:13:18.072Z",
+        "updatedAt": "2025-06-17T11:13:18.072Z"
+      },
+      "formResponses": []
+    }
+  ],
+  "formSettings": [
+    {
+      "id": "9b13d2b6717e4d319b4df57cd",
+      "primaryColor": "#673ab7",
+      "backgroundColor": "#f0ebf8",
+      "createdAt": "2025-06-17T11:13:18.072Z",
+      "updatedAt": "2025-06-17T11:13:18.072Z"
+    }
+  ],
   "formResponses": []
 }

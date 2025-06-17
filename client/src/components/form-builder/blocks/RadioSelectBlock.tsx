@@ -8,7 +8,7 @@ import {
 import { ChevronDown, CircleIcon, X } from "lucide-react";
 import { Label } from "../ui/label";
 import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
-import { useBuilder } from "@/context/builder-provider";
+import { useBuilder } from "context/builder-provider";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";

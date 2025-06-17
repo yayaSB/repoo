@@ -25,9 +25,9 @@ import {
   FormCategoryType,
   ObjectBlockType,
 } from "@/@types/form-block.type";
-import { fontSizeClass, fontWeightClass } from "@/constant";
+import { fontSizeClass, fontWeightClass } from "@/constants/form-builder";
 import { Input } from "../ui/input";
-import { useBuilder } from "@/context/builder-provider";
+import { useBuilder } from "context/builder-provider";
 
 const blockCategory: FormCategoryType = "Field";
 const blockType: FormBlockType = "Heading";
